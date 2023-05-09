@@ -26,8 +26,14 @@
         <h1>BATMAN</h1>
     </header>
     <main>
+
 <!-- La première section de la partie home-->
 <section>
+    <style>
+        body {
+            background-image: url(Bathome1.png) ;
+        }
+    </style>
     <p> Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de Gotham City. Il est vengeur. Il est la nuit.</p>
     <h2> Il est Batman</h2>
     <div>
@@ -153,7 +159,7 @@
         </div>
     <P>ACTION, Adventure</P>
     <P>Batman Begins</P>
-    <P>IMDB : 8.2</P>
+    <p>IMDB : <span>8.2</span> </P>
     <p>Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément
         traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de
         guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à
@@ -174,26 +180,31 @@
 <section>
 <div>
     <h1>PRENONS CONTACT</h1>
+    <form action="">
+        <label for="email">ADRESSE EMAIL</label>
+        <input type="email" name="email" placeholder="Adresse email">
+        <label for="newsletter">NEWSLETTER</label> <br>
+        <label for="">En cochaant cette case vouq acceptez de recevoir l'actualité concernant les aventures de Batman :</label> <br>
+        <input type="checkbox" > <br>
+    
 <div>
-    <h2>ADRESSE EMAIL</h2>
-    <p>Adresse email</p>
+    <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
+    <span>
+        <img src="assets/Logos/icon_flèche_bas.png" alt="">
+    </span>
 </div>
 <div>
-    <h2>NEWSLETTER</h2>
-    <P>En cochaant cette case vouq acceptez de recevoir l'actualité concernant les aventures de Batman : </P>
-    <p> Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</p>
     <p>Souhaitez-vous recevoir des news</p>
-        <a href="">Des films</a>
-        <a href="">Des comics</a>
-        <a href="">De tout</a>
 </div>
-<div>
-    <h2>MESSAGE</h2>
-    <P>Laissez un commentaire pour la communauté</P>
-</div>
-<div>
-    <a href="">CONFIRMER</a>
-</div>
+<a href="">Des films</a>
+<a href="">Des comics</a>
+<a href="">De tout</a>
+<h2>MESSAGE</h2>
+<textarea name="" id="" cols="30" rows="10"placeholder= "Laissez un commentaire pour la communauté"></textarea>
+<input type="submit" value="CONFIRMER">
+
+</form>
+      
 </div>
 </section>
 <!--La section bas de la page-->
@@ -202,27 +213,36 @@
          <div>
             <img src="assets/Logos/icon_guillemets_1.png" alt="">
          </div>
-        <P>La seule façon raisonable de vivre en ce baas monde, c'est en dehors des règles</P>
-        <p>The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
+         <P>La seule façon raisonable de vivre en ce baas monde, c'est en dehors des règles</P>
+        <div>
+            <p>The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
+        </div>
+         
         <div>
           <img src="assets/Logos/icon_guillemets_2.png" alt="">
         </div>
-        <div>
-            <div><img src="assets/Logos/icon_WB.png" alt=""></div>
-            <p>Ce projet respecte l'univers cinématographine des films Batman récents. Version Nolan & Snyder & Reeves</p>
-        </div>
-        <div>
-<img src="assets/Logos/logo_sayna_white.png" alt="SAYNA">
-<img src="assets/Logos/icon_x.png" alt="X">
-<img src="assets/Logos/icon_DC.png" alt="DC Comics">
-<img src="assets/Logos/icon_facebook.png" alt="Facebook">
-<img src="assets/Logos/icon_ig.png" alt="Instagram">
-<img src="assets/Logos/icon_tw.png" alt="Twiteer">
-
-        </div>
     </div>
-  
 </section>
+<footer>
+    <div>
+        <img src="assets/Logos/icon_WB.png" alt="">
+        <p>Ce projet respecte l'univers cinématographine des films Batman récents. Version Nolan & Snyder & Reeves</p>
+    </div>
+    <div>
+        <a href="#">
+            <img src="assets/Logos/logo_sayna_white.png" alt="SAYNA">
+            <img src="assets/Logos/icon_x.png" alt="X">
+            <img src="assets/Logos/icon_DC.png" alt="DC Comics">
+        </a>
+
+        <a href="">
+            <img src="assets/Logos/icon_facebook.png" alt="Facebook">
+            <img src="assets/Logos/icon_ig.png" alt="Instagram">
+            <img src="assets/Logos/icon_tw.png" alt="Twiteer">
+        </a>
+
+    </div>
+</footer>
 
     
 </main>
