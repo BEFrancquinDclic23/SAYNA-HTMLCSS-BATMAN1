@@ -1,17 +1,22 @@
+@import url('../styles/Rajdhani/Rajdhani-Medium.ttf');
+@import url('../styles/Space_Grotesk/static/SpaceGrotesk-Bold.ttf');
+@import url('../styles/Space_Grotesk/static/SpaceGrotesk-Regular.ttf')
 
-@font-face {
-    font-family: "Rajdhani";
-    src: url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Space+Grotesk:wght@400;700&display=swap');
-}
+h1 {
+    font-family : 'Rajdhani-Medium.ttf';
+  }
         /*commentaiure */
 body{
     margin: center;
     padding: 10px;
     box-sizing: border-box;
 }
-style{
-    background-image:url("assets/Illustrations/Bathome1.png");
-}
+.accueil-p {
+    background-image: url('assets/Illustrations/Bathome1.png');
+    background-size: cover; /* Ajuste la taille de l'image pour remplir la section */
+    background-position: center; /* Centre l'image horizontalement et verticalement */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  }
 
 h1{
     font-family: "Rajdhani";
