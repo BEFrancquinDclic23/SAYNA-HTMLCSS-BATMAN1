@@ -1,0 +1,27 @@
+
+@font-face {
+    font-family: "Rajdhani";
+    src: url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Space+Grotesk:wght@400;700&display=swap');
+}
+        /*commentaiure */
+body{
+    margin: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+style{
+    background-image:url("assets/Illustrations/Bathome1.png");
+}
+
+h1{
+    font-family: "Rajdhani";
+    font-size: 36px;
+    font-weight: 400;
+}
+
+button{
+    font-family: 'rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+}
+
