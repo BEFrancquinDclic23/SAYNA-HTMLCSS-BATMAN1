@@ -333,8 +333,49 @@ input[type='submit']{
     display: block;
     padding: 15px 0;
     cursor: pointer;
+   
+}
+
+input[type='submit']:hover {
     background-image: linear-gradient(
         60deg, #67758e , #5e241e
-    ) 1;
+    );
+    }
 
+#citations {
+    margin: 90px;
+}
+
+#citations .citation {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#citations .citation-a p {
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+#citations .guillemet2 img {
+  float: left;
+  padding-left: 1300px;
+}
+/*Design du footer*/
+footer{
+    margin-top:100px;
+}
+
+footer .text-footer{
+    text-align: center ;
+    font-size: 14px;
+}
+
+footer .logosocial {
+    text-align: center;
+    margin: 40px;
+}
+
+footer .social-item {
+    padding: 15px;
 }
