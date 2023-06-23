@@ -18,19 +18,25 @@
                 <img class="logo" src="assets/logos/logo_bat_flèche_2.png" alt="logobatman">
             </a>
             <ul>
-                <li> <a class="hover" href="index.html" title="Page d'accueil">Home</a> </li>
+                <li> <a class="current" href="index.html" title="Page d'accueil">Home</a> </li>
             </ul>
         </nav>
 </header> 
 
+<div id="scroll">
+    <a href="index.html">
+        <img id="scrolltop" src="assets/logos/logo_bat_flèche.png" alt="batmanlogohaut"> 
+    </a>
+    <img src="assets/logos/icon_facebook.png" alt="facebookicon">
+    <img src="assets/logos/icon_ig.png" alt="instagramicon">
+    <img src="assets/logos/icon_tw.png" alt="twittericon">
+    <a href="#formulaire">
+        <img id="scrollbottom" src="assets/logos/logo_bat_flèche_2.png" alt="batmanlogobas">     
+    </a>
+    
+</div>
 <main>
-    <div class="scroll">
-        <img src="assets/logos/logo_bat_flèche.png" alt="batmanlogohaut"> 
-        <img src="assets/logos/icon_facebook.png" alt="facebookicon">
-        <img src="assets/logos/icon_ig.png" alt="instagramicon">
-        <img src="assets/logos/icon_tw.png" alt="twittericon">
-        <img src="assets/logos/logo_bat_flèche_2.png" alt="batmanlogobas">     
-    </div>
+    
 
     <section id="hero" >
         <div class="container">
@@ -63,7 +69,7 @@
     </div>
  
 <div class="personnage">
-    <div>
+    <div class="card">
         <img src="assets/images/Bathome2.png" alt="batmanpattison">
         <div class="soust">
            <p>Robert pattison </p>
@@ -71,17 +77,17 @@
         </div>    
     </div>
 
-     <div class="soust">
+     <div class="card">
         <img src="assets/images/Bathome3.png" alt="batmanbale">
-        <div>
+        <div class="soust">
              <p>christian bale</p>
              <p>(2006-2008-2012)</p>
         </div>  
     </div>
 
-    <div class="soust">
+    <div class="card">
         <img src="assets/images/Bathome4.png" alt="batmanaffleck">  
-        <div>
+        <div class="soust">
             <p>ben affleck</p>
             <p>2016-2017/2020-2023</p> 
         </div>
@@ -104,7 +110,7 @@
         ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :</p>
         </div>
         <div class="personnage2">
-            <div>
+            <div class="card">
                 <img src="assets/images/Bathome5.png" alt="riddler">
                 <div class="soust">
                    <p>The Riddler - Paul Dano  </p>
@@ -112,7 +118,7 @@
                 </div>    
             </div>
         
-            <div>
+            <div class="card">
                 <img src="assets/images/Bathome6.png" alt="joker">
                 <div class="soust">
                      <p>Le Joker - Heath Ledger</p>
@@ -120,7 +126,7 @@
                 </div>  
             </div>
         
-            <div >
+            <div  class="card">
                 <img src="assets/images/Bathome7.png" alt="darkseid">  
                 <div class="soust">
                     <p>Darkseid - Ray Porter</p>
@@ -134,11 +140,12 @@
 
         <!-- section 3 pour les alliés de Batman -->
 
-<section id="allies">          
+<section id="allies">     
+         
     <div class="container">
-        <img src="assets/images/Bathome12.png" alt="batman-accroupi">
         <div class="paraph">
         <h1>ALLIÉS</h1>
+        <img src="assets/images/Bathome12.png" alt="batman-accroupi">
         <p class="texte">Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce 
         avant de l’assister dans son rôle du Batman. Ce dernier rencontrera Catwoman dès le 
         premier numéro des aventures de l’homme chauve-souris en 1940. Tantôt ennemie tantôt 
@@ -147,7 +154,7 @@
         nettoyer sa ville de la criminalité qui y règne.</p>
         </div>
         <div class="personnage3">
-            <div>
+            <div class="card">
                 <img src="assets/images/Bathome9.png" alt="alfred">
                 <div class="soust">
                      <p>Alfred Pennyworth - Michael Cain </p>
@@ -155,7 +162,7 @@
                 </div>  
             </div>
             
-            <div>
+            <div class="card">
                 <img src="assets/images/Bathome8.png" alt="catwoman">
                 <div class="soust">
                     <p>Catwoman - Zoé Kravitz</p>
@@ -163,7 +170,7 @@
                </div>
             </div>
         
-            <div>
+            <div class="card">
                 <img src="assets/images/Bathome10.png" alt="inspecteurgordon">
                 <div class="soust">
                    <p>James Gordon </p>
@@ -186,6 +193,7 @@
         la Terre, ceux vers qui le monde entier se tourne lorsque les menaces extraterrestres ou 
         surnaturelles menacent son existence.</p>
         </div>
+
     </div>
         <img src="assets/images/Bathome11.png" alt="image de justice league">
 </section>
@@ -223,7 +231,10 @@
         </div>
 
         <div class="trailer">
-            <img src="assets/images/Bathome_ba2.png" alt="bande-annonce">
+            <a href="">
+                <img src="assets/images/Bathome_ba2.png" alt="bande-annonce">
+            </a>
+            
         </div>
          
     </div>

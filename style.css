@@ -51,11 +51,31 @@ p{
     font-family: 'SpaceGR';
     font-size: 18px;
 }
+
+/* Animation Fade-In de la gauche au démarrage  */
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animation Fade-In sur tous les éléments */
+  body {
+    animation: fade-in 0.5s ease-in-out forwards;
+  }
+
 /*Paramètre de la page web*/
 .container {
     width: 80%;
     margin: 0 auto;
 }
+
+
 /*Style du header */
 body{
     color: #ffffff;
@@ -71,11 +91,11 @@ nav{
     justify-content: space-between;
     padding: 20px 30px;
 }
-ul{
+header nav ul{
     list-style: none;
 }
 
-ul a{
+header nav ul li a{
     color: #ffffff;
     font-family: 'RajdhaniM';
     font-size:30px;
@@ -83,27 +103,40 @@ ul a{
     text-decoration: none;
 }
 
-nav ul a:hover {
+header nav ul a:hover {
 color: #ffff00;
 font-weight: bold;
 text-decoration: underline;
 }
+
+header nav ul li a.current {
+    font-weight: bold;
+    text-decoration: underline;
+  }
 /*Design de la scroll  et ses styles*/
-.scroll {
+#scroll {
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
     right: 60px;
     margin-top: 200px;
-
+    z-index: 999;
 }
 
-.scroll img {
+#scroll img {
     margin: 25px auto;
 }
 
-/*Design de la section 1 et ses styles*/
+#scrolltop,
+#scrollbottom {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+
+
+/*Design de la section hero et ses styles*/
 #hero{
     background-image: url(assets/images/Bathome1.png);
     background-position: top center;
@@ -137,13 +170,26 @@ text-decoration: underline;
     margin: 0 auto;
     margin-top: 300px;
 }
-/*Design de la section 2 et ses styles*/
+/*Design de la section 1 Batman au cinéma et ses styles*/
 .personnage {
     display: flex;
     justify-content: space-between;
     margin-left: 30px ;
     margin-right: 100px;
 }
+/* Carte des personnages*/
+.card{
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.card img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover img {
+    transform: scale(1.1);
+  }
 
 .paraph {
     margin-left: 30px ;
@@ -163,19 +209,29 @@ text-decoration: underline;
     text-align: center;
 }
 
-/*Design de la section 2 et ses styles*/
+/*Design de la section 2  Les enemis de Batman et ses styles*/
 .personnage2 {
     display: flex;
     justify-content: space-between;
      margin-left: 30px ;
     margin-right: 100px;
 }
-/*Design de la section 3 et ses styles*/
+/*Design de la section 3 Alliés et ses styles*/
 .personnage3 {
     display: flex;
     justify-content: space-between;
      margin-left: 30px ;
     margin-right: 100px;
+}
+
+#allies .paraph h1 {
+    display: inline;
+    padding-right: 700px;
+}
+
+#allies .paraph img {
+    display: inline-block;
+   
 }
 
 /*Design de la section 4 justice league et ses styles*/
@@ -192,6 +248,20 @@ text-decoration: underline;
 }
 
 /*Design de la section 5 Multimedia et ses styles*/
+/* Buttons */
+button {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); /* Couleur du fond en dégradé */
+    opacity: 0.4; /* Opacité initiale */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 1; /* Opacité au survol */
+  }
+
 #multimedia button {
     position: relative; 
     top: 200px;
@@ -378,4 +448,12 @@ footer .logosocial {
 
 footer .social-item {
     padding: 15px;
+}
+
+/* Social Icons */
+.logosocial .social-item a img:hover {
+  filter: hue-rotate(60deg);
+  color: #ffff00;
+  opacity: 0.6; /* Opacité initiale */
+  cursor: pointer;
 }
